@@ -63,7 +63,7 @@ ccds_script = [
 def run_scripts():
     try:
         output = []
-        output += execute_command_and_get_output(f"ccds {CCDS_ROOT}", ccds_script)
+        output += execute_command_and_get_output(f"rbds {CCDS_ROOT}", ccds_script)
         return output
 
     finally:
