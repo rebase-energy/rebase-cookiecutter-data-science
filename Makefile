@@ -26,13 +26,13 @@ requirements:
 
 ## Format the code using isort and black
 format:
-	isort --profile black ccds hooks tests docs/scripts
-	black ccds hooks tests docs/scripts
+	isort --profile black rbds hooks tests docs/scripts
+	black rbds hooks tests docs/scripts
 
 lint:
-	flake8 ccds hooks tests docs/scripts
-	isort --check --profile black ccds hooks tests docs/scripts
-	black --check ccds hooks tests docs/scripts
+	flake8 rbds hooks tests docs/scripts
+	isort --check --profile black rbds hooks tests docs/scripts
+	black --check rbds hooks tests docs/scripts
 
 
 ###     DOCS
@@ -59,8 +59,8 @@ _clean_manual_test:
 
 manual-test: _prep _clean_manual_test
 	mkdir -p manual_test
-	cd manual_test && python -m ccds ..
+	cd manual_test && python -m rbds ..
 
 manual-test-debug: _prep _clean_manual_test
 	mkdir -p manual_test
-	cd manual_test && python -m pdb ../ccds/__main__.py ..
+	cd manual_test && python -m pdb ../rbds/__main__.py ..

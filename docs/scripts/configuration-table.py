@@ -2,7 +2,7 @@ import json
 import re
 from pathlib import Path
 
-from ccds.hook_utils.dependencies import basic
+from rbds.hook_utils.dependencies import basic
 
 PROJECT_ROOT = Path(__file__).parents[2]
 

@@ -1,15 +1,17 @@
 # Rebase Cookiecutter Data Science
 
-_A logical, reasonably standardized but flexible project structure for doing and sharing data science work._
-
-**Rebase Cookiecutter Data Science (RCCDS)** (based on CCDS) is a tool for setting up a data science project template that incorporates best practices. To learn more about CCDS's philosophy, visit the [project homepage](https://cookiecutter-data-science.drivendata.org/).
+**Rebase Cookiecutter Data Science**(based on [Cookiecutter Data Science](https://github.com/drivendataorg/cookiecutter-data-science)) is a tool for quickly setting up a data science template that incorporates best practices. To learn more about philosophy and motivation behind this template, visit the Cookiecutter Data Science [homepage](https://cookiecutter-data-science.drivendata.org/).
 
 ## Installation
 
-Cookiecutter Data Science v2 requires Python 3.8+. Since this is a cross-project utility application, we recommend installing it with [pipx](https://pypa.github.io/pipx/). Installation command options:
+Cookiecutter Data Science v2 requires Python 3.8+. Since this is a cross-project utility application, we recommend installing it with [pipx](https://pypa.github.io/pipx/) (for an isolated installation in your global environment). Installation command options:
 
 ```bash
-pip install rebase-cookiecutter-data-science
+# With pipx from PyPI (recommended)
+pipx install rbds
+
+# With pip from PyPI
+pip install rbds
 ```
 
 ## Starting a new project
@@ -17,7 +19,7 @@ pip install rebase-cookiecutter-data-science
 To start a new project, run:
 
 ```bash
-rccds
+rbds
 ```
 
 ### The resulting directory structure

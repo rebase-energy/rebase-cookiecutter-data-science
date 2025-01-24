@@ -130,7 +130,7 @@ def render_termynal():
 
     # replace local directory in ccds call with URL so it can be used for documentation
     output = output.replace(
-        str(CCDS_ROOT), "https://github.com/drivendataorg/cookiecutter-data-science"
+        str(CCDS_ROOT), "https://github.com/rebase-energy/rebase-cookiecutter-data-science"
     )
     return output
 

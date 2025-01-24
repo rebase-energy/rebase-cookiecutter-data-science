@@ -7,7 +7,7 @@ jinja2.StrictUndefined = jinja2.Undefined
 # Monkey-patch cookiecutter to allow sub-items
 from cookiecutter import prompt
 
-from ccds.monkey_patch import prompt_for_config
+from rbds.monkey_patch import prompt_for_config
 
 prompt.prompt_for_config = prompt_for_config
 
@@ -15,7 +15,7 @@ prompt.prompt_for_config = prompt_for_config
 # monkey-patch context to point to ccds.json
 from cookiecutter import generate
 
-from ccds.monkey_patch import generate_context_wrapper
+from rbds.monkey_patch import generate_context_wrapper
 
 generate.generate_context = generate_context_wrapper
 
@@ -29,7 +29,7 @@ def default_ccds_main(f):
 
     def _main(*args, **kwargs):
         f.params[1].default = (
-            "https://github.com/drivendataorg/cookiecutter-data-science"
+            "https://github.com/rebase-energy/rebase-cookiecutter-data-science"
         )
         return f(*args, **kwargs)
 

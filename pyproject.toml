@@ -3,31 +3,24 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.module]
-name = "ccds"
+name = "rbds"
 
 [project]
-name = "cookiecutter-data-science"
-version = "2.0.0"
-description = "A logical, reasonably standardized but flexible project structure for doing and sharing data science work."
+name = "rbds"
+version = "0.1.2"
+description = "A library for cookiecutter data science with rebase tools"
 authors = [
-  { name = "DrivenData", email = "info@drivendata.org" },
+  { name = "rebase.energy", email = "info@rebase.energy" },
 ]
 license = { file = "LICENSE" }
 readme = "README.md"
+keywords = ["cookiecutter", "data science", "python"]
 classifiers = [
-  "Development Status :: 5 - Production/Stable",
-  "Intended Audience :: Developers",
-  "Intended Audience :: Science/Research",
-  "License :: OSI Approved :: MIT License",
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Topic :: Scientific/Engineering",
-  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
 ]
+
 requires-python = ">=3.8"
 dependencies = [
   "click",
@@ -35,10 +28,10 @@ dependencies = [
 ]
 
 [project.scripts]
-ccds = "ccds.__main__:main"
+rbds = "rbds.__main__:main"
 
 [project.urls]
-"Homepage" = "https://cookiecutter-data-science.drivendata.org/"
-"Source Code" = "https://github.com/drivendataorg/cookiecutter-data-science/"
-"Bug Tracker" = "https://github.com/drivendataorg/cookiecutter-data-science/issues"
-"DrivenData" = "https://drivendata.co"
+homepage = "https://github.com/rebase-energy/rebase-cookiecutter-data-science"
+
+[project.optional-dependencies]
+dev = ["pytest", "black"]
